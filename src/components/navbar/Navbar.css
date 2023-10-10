@@ -1,0 +1,81 @@
+
+.navbar {
+    background-color: var(--main-color);
+    color: aliceblue;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    background: linear-gradient(to_top, transparent 0%, rgb(0,0,0,0.3), 50%);
+}
+
+.navbar .container {
+    display:flex;
+    padding: 0 50px;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+
+}
+
+.navbar .container .left {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .container .left span {
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.navbar .container .left img {
+    height: 45px;
+    width: 150px;
+}
+
+.navbar .container .right {
+    display: flex;
+    align-items: center;
+}
+
+
+.navbar .container .right img {
+    border-radius: 5px;
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    cursor: pointer;
+} 
+
+.navbar .container .right .icon {
+
+    margin: 0px 15px;
+    cursor: pointer;
+}
+
+.profile {
+    position: absolute;
+    right: 16rem;
+    top: 25.5px;
+}
+/* the dropdown list */
+
+.profile .options {
+
+    display: none;
+    background-color: var(--main-color);
+    border-radius: 5px;
+}
+
+.profile .options span {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.profile:hover .options {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 2px; 
+    
+}
